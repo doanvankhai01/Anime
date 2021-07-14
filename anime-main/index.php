@@ -30,6 +30,7 @@
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  
 }
 
 .cardcard {
@@ -113,11 +114,11 @@
                                         <li><a href="./login.php">Login</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">TOP ANIME <span class="arrow_carrot-down"></span></a>
+                                <li><a href="theongay.php">TOP ANIME <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.php">Theo Ngày</a></li>
-                                        <li><a href="./anime-details.php">Theo Tháng</a></li>
-                                        <li><a href="./anime-watching.php">Theo Năm</a></li>
+                                        <li><a href="theongay.php">Theo Ngày</a></li>
+                                        <li><a href="theothang.php">Theo Tháng</a></li>
+                                        <li><a href="theonam.php">Theo Năm</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
@@ -207,7 +208,7 @@
                                   <h5><?php echo $row['sotap'];?></h5>
                                 </div>
                               </div>
-                              <p style="color:white;padding-top:5px;size:12px;"><?php echo $row['tenanime'];?></p>
+                              <p style="color:white;padding-top:5px;"><?php echo $row['tenindex'];?></p>
                             </div>
                           </div>
                         </div>

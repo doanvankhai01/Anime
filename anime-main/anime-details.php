@@ -46,8 +46,8 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.php">Homepage</a></li>
-                                <li><a href="./categories.php">Categories <span class="arrow_carrot-down"></span></a>
+                                <li class="active"><a href="./index.php">TRANG CHỦ</a></li>
+                                <li><a href="./categories.php">THỂ LOẠI <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
                                         <li><a href="./categories.php">Categories</a></li>
                                         <li><a href="./anime-details.php">Anime Details</a></li>
@@ -57,8 +57,15 @@
                                         <li><a href="./login.php">Login</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Our Blog</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a href="theongay.php">TOP ANIME <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="theongay.php">Theo Ngày</a></li>
+                                        <li><a href="theothang.php">Theo Tháng</a></li>
+                                        <li><a href="theonam.php">Theo Năm</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">LỊCH CHIẾU</a></li>
+                                <li><a href="#">LIÊN HỆ</a></li>
                             </ul>
                         </nav>
                     </div>
