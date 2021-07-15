@@ -66,7 +66,7 @@
 .buttoncard:hover {
   background-color: #555;
 }
-.containerso {
+.container {
   position: relative;
   font-family: Arial;
 }
@@ -80,6 +80,52 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+#slideshow {
+  overflow: hidden;
+  height: 550px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 3600px;
+  -webkit-animation: slide 25s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 400px;
+  width: 900px;
+}
+
+
+@-webkit-keyframes slide {
+  10% {margin-left: 0px;}
+  20% {margin-left: -900px;}
+  30% {margin-left: -900px;}
+  40% {margin-left: -1800px;}
+  50% {margin-left: -1800px;}
+  
+  
+}
+.tittle h2 {
+    color: white;
+    font-size: 42px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 1700px;
+    line-height: 52px;
+    margin-top: 35px;
+    margin-bottom: 8px;
+    position: relative;
+    top: -160px;  
+}
+.tittle p{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -150px;
+  
 </style>
 
 <body>
@@ -122,7 +168,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
-                                <li><a href="#">LIÊN HỆgvvggvhuhu</a></li>
+                                <li><a href="#">LIÊN HỆ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -138,49 +184,40 @@
         </div>
     </header>
     <!-- Header End -->
-
+    <br>
+    <br>
+    <br>
     <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                                <p>After 30 days of travel across the world...</p>
-                                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                                <p>After 30 days of travel across the world...</p>
-                                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                                <p>After 30 days of travel across the world...</p>
-                                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="slideshow-nab">
+       <div id="slideshow">
+  <div class="slide-wrapper">
+      <div class="slide"><img src="image/anime/5.jpg">
+          <div class='tittle' >
+              <strong><h2>Bleach : The War </h2></strong>
+              <p> Kể về những cuộc phiêu lưu của Kurosaki Ichigo 
+                  sau khi anh có được những sức mạnh của "Shinigami"(死神, Tử thần)</p>
+              
+          </div>
+      </div>
+      <div class="slide"><img src="image/anime/8.jpg">
+          <div class='tittle'>
+              <strong><h2> Fate/Stay Night: Unlimited Blade Works </h2></strong>
+              <p>Có nội dung chính xoay quanh Cuộc Chiến Chén Thánh – Một trận quyết đấu sinh tử giữa 7 vị Masters (Pháp sư) cùng 7 Servants (Anh linh trong lịch sử được triệu hồi bởi Chén Thánh)</p>
+              
+          </div>
+      </div>
+      <div class="slide"><img src="image/anime/5.jpg">
+          <div class='tittle'>
+              <p>test</p>
+      
+      </div>
+    
+      
+      
+     
+      
+  </div>
+</div>
     </section>
     <!-- Hero Section End -->
 
