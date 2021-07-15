@@ -13,7 +13,7 @@
                 <th>Tên Anime</th>
                 <th>Mô Tả</th>
                 <th>Lượt Xem</th>
-                <th>Tac vu</th>
+                <th>Tac</th>
             </tr>
         <?php 
         $conn = mysqli_connect("localhost", "root", "", "anime");
