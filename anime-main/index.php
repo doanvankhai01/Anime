@@ -122,7 +122,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
-                                <li><a href="#">LIÊN HỆ</a></li>
+                                <li><a href="#">LIÊN HỆgvvggvhuhu</a></li>
                             </ul>
                         </nav>
                     </div>
