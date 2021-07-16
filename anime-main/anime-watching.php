@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anime | Template</title>
+    <title></title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -94,10 +94,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
-                        <a href="./index.php"><i class="fa fa-home"></i> Home</a>
-                        <a href="./categories.php">Categories</a>
-                        <a href="#">Romance</a>
-                        <span><?php echo $row['film'];?></span>
+                        <a href="./index.php"><i class="fa fa-home"></i>TRANG CHỦ</a>
+                        <a href="./categories.php">DANH MỤC</a>
+                        <a href="#">GIỚI THIỆU PHIM</a>
+                        <span><?php echo $row['tenanime'];?></span>
                     </div>
                 </div>
             </div>
@@ -119,93 +119,32 @@
                     </div>
                     <div class="anime__details__episodes">
                         <div class="section-title">
-                            <h5>List Name</h5>
+                            <h5>TẬP</h5>
                         </div>
-                        <a href="#">Ep 01</a>
-                        <a href="#">Ep 02</a>
-                        <a href="#">Ep 03</a>
-                        <a href="#">Ep 04</a>
-                        <a href="#">Ep 05</a>
-                        <a href="#">Ep 06</a>
-                        <a href="#">Ep 07</a>
-                        <a href="#">Ep 08</a>
-                        <a href="#">Ep 09</a>
-                        <a href="#">Ep 10</a>
-                        <a href="#">Ep 11</a>
-                        <a href="#">Ep 12</a>
-                        <a href="#">Ep 13</a>
-                        <a href="#">Ep 14</a>
-                        <a href="#">Ep 15</a>
-                        <a href="#">Ep 16</a>
-                        <a href="#">Ep 17</a>
-                        <a href="#">Ep 18</a>
-                        <a href="#">Ep 19</a>
+                        <a href="#">Tập 01</a>
+                        <a href="#">Tập 02</a>
+                        <a href="#">Tập 03</a>
+                        <a href="#">Tập 04</a>
+                        <a href="#">Tập 05</a>
+                        <a href="#">Tập 06</a>
+                        <a href="#">Tập 07</a>
+                        <a href="#">Tập 08</a>
+                        <a href="#">Tập 09</a>
+                        <a href="#">Tập 10</a>
+                        <a href="#">Tập 11</a>
+                        <a href="#">Tập 12</a>
+                        <a href="#">Tập 13</a>
+                        <a href="#">Tập 14</a>
+                        <a href="#">Tập 15</a>
+                        <a href="#">Tập 16</a>
+                        <a href="#">Tập 17</a>
+                        <a href="#">Tập 18</a>
+                        <a href="#">Tập 19</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="anime__details__review">
-                        <div class="section-title">
-                            <h5>Reviews</h5>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-1.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Chris Curry - <span>1 Hour ago</span></h6>
-                                <p>whachikan Just noticed that someone categorized this as belonging to the genre
-                                "demons" LOL</p>
-                            </div>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-2.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Lewis Mann - <span>5 Hour ago</span></h6>
-                                <p>Finally it came out ages ago</p>
-                            </div>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-3.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Louis Tyler - <span>20 Hour ago</span></h6>
-                                <p>Where is the episode 15 ? Slow update! Tch</p>
-                            </div>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-4.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Chris Curry - <span>1 Hour ago</span></h6>
-                                <p>whachikan Just noticed that someone categorized this as belonging to the genre
-                                "demons" LOL</p>
-                            </div>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-5.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Lewis Mann - <span>5 Hour ago</span></h6>
-                                <p>Finally it came out ages ago</p>
-                            </div>
-                        </div>
-                        <div class="anime__review__item">
-                            <div class="anime__review__item__pic">
-                                <img src="img/anime/review-6.jpg" alt="">
-                            </div>
-                            <div class="anime__review__item__text">
-                                <h6>Louis Tyler - <span>20 Hour ago</span></h6>
-                                <p>Where is the episode 15 ? Slow update! Tch</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="anime__details__form">
                         <div class="section-title">
                             <h5>Your Comment</h5>
