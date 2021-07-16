@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css"/>
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -72,39 +73,41 @@
 }
 
 .text-block {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: red;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-size: 15px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 #slideshow {
   overflow: hidden;
-  height: 550px;
-  width: 900px;
+  height: 700px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .slide-wrapper {
-  width: 3600px;
+  width: 4800px;
   -webkit-animation: slide 25s ease infinite;
 }
 
 .slide {
   float: left;
   height: 400px;
-  width: 900px;
+  width: 1200px;
 }
 
 
 @-webkit-keyframes slide {
   10% {margin-left: 0px;}
-  20% {margin-left: -900px;}
-  30% {margin-left: -900px;}
-  40% {margin-left: -1800px;}
-  50% {margin-left: -1800px;}
+  20% {margin-left: -1200px;}
+  30% {margin-left: -1200px;}
+  40% {margin-left: -2400px;}
+  50% {margin-left: -2400px;}
   
   
 }
@@ -125,7 +128,36 @@
     margin-bottom: 40px;
     position: relative;
     top: -150px;
-  
+}
+.col-lg-3 h2 {
+    color: #ffffff;
+}
+.col-lg-6 h2 {
+    color: #ffffff;
+    text-align: center;
+}
+.footer-col{
+    float: left;
+    margin-left: 20px;
+    padding-left: 135px;
+    height: 123px;
+}
+.widget-title .title {
+    float: left;
+    margin-left: 80px;
+    color:white;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 100px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #1B1B1B;
+    border-radius: 7px;
+
+}
+
+
 </style>
 
 <body>
@@ -206,30 +238,31 @@
               
           </div>
       </div>
-      <div class="slide"><img src="image/anime/5.jpg">
+      <div class="slide"><img src="image/anime/7.png">
           <div class='tittle'>
-              <p>test</p>
+             <strong><h2>MOBILE SUIT GUNDAM : IRON-BLOODED ORPHANS </h2></strong>
+              <p> Bộ anime lấy bối cảnh 300 năm sau một cuộc xung đột lớn giữa Trái Đất và Sao Hỏa được biết đến với tên gọi Thảm họa Đại chiến (Calamity War).</p>
       
-      </div>
-    
-      
-      
-     
-      
+      </div
   </div>
 </div>
     </section>
-    <!-- Hero Section End -->
+ <div class="col-xs-12 col-sm-12 col-md-6">
+       <div class="widget-title">
+           <h3 class="title">Anime Mới Cập Nhật</h3>
+     </div>
+ </div>
 
     <!-- Product Section Begin -->
+    <br>
+    <br>
+    <br>
     <section class="product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    
-                    
-                    
-                    
+    <br>
+    <br>
                     <?php
                         require_once("Connection.php");
                         $query=mysqli_query($conn,"select * from anime");
@@ -241,10 +274,12 @@
                             <div class="containercard">
                             <div class="containerso">
                                       <a href="anime-details.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['anh'];?>" alt="Jane" style="width:100%"></a>
-                                <div class="text-block">
+                                       <div class="card-body">
+                                      <div class="text-block">
                                   <h5><?php echo $row['sotap'];?></h5>
                                 </div>
                               </div>
+                            </div>
                               <p style="color:white;padding-top:5px;"><?php echo $row['tenindex'];?></p>
                             </div>
                           </div>
@@ -377,27 +412,51 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <div class="footer__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                </div>
+                    <h2>Liên hệ Admin</h2>
+                    <br>
+                    <p> Tổng hợp tất cả các bộ anime trên trang được tổng hợp từ Internet và re-up từ các Fansub.</p>
+                    <p><i class="fab fa-facebook-square">FACEBOOK:</i> Tuan Anh </p>
+                    <p><i class="fab fa-facebook-messenger">MESSENGER:</i> Huy Lee </p>
+                    <p><i class="fas fa-envelope">EMAIL:</i> wibuteam@gmail.com  </p>
+
             </div>
             <div class="col-lg-6">
-                <div class="footer__nav">
-                    <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./blog.html">Our Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
+                <h2>Project Anime</h2>
+                <br>
+                <div class="footer-col">
+                <p>Liên hệ công ty thiết kế</p>
+                <p>Giám đốc kiêm trưởng dự án : Tuan Anh</p>
+                <p>Hotline hỗ trợ quảng cáo: 0942 86 11 33</p>
+                <p>Email: wibuhue@gmail.vn</p>
+                <p>Address: Tp huế,tỉnh Thừa thiên Huế</p>
                 </div>
             </div>
             <div class="col-lg-3">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                  <h2>Thông Tin</h2>
+                  <BR>
+                  <p>Xem tốt nhất t với màn hình độ phân giải 1280x720px trở lên và sử dụng trình duyệt Mozilla Firefox, Chrome & Cốc Cốc.</p>
+                  <p>Bản quyền © 2021 Thiết kế bởi công ty WibuVN.Được quyền bảo lưu và đăng kí bản quyền</p>
 
               </div>
           </div>
+         <div class="row">
+             <div class="col-lg-3">
+                 
+             </div>
+             <div class="col-lg-6">
+                 <BR>
+        <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="./index.html">TRANG CHỦ</a></li>
+                        <li><a href="./categories.html">THỂ LOẠI</a></li>
+                        <li><a href="./blog.html">TOP ANIME</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+             </div>
+              <div class="col-lg-3">
+        
+              </div>
       </div>
   </footer>
   <!-- Footer Section End -->
