@@ -40,19 +40,29 @@
   display: table;
   clear: both;
 }
+.cardbox{
+}
+.leftcolumn{
+}
 
+.rowbox{
+    border-bottom: 1px solid #fff;
+}
 .columnbox1 {
   float: left;
   width: 5%;
-  padding-top: 28px;
+  padding-top: 30px;
   height: auto;
 }
 .columnbox2 {
+   padding-top: 10px;
   float: left;
   width: 15%;
   height: auto;
+  text-decoration: none;
 }
 .columnbox3 {
+     padding-top: 20px;
   float: left;
   width: 70%;
   height: auto;
@@ -61,14 +71,18 @@
 .columnbox4 {
   float: left;
   width: 10%;
-  padding-top: 28px;
+  padding-top: 20px;
   height: auto;
+  text-decoration: none;
 }
 
 .rowbox:after {
   content: "";
   display: table;
   clear: both;
+}
+.navbar {
+    text-decoration-line: none;
 }
 
 </style>
@@ -83,14 +97,14 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
                     <div class="header__logo">
                         <a href="./index.php">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
@@ -114,6 +128,7 @@
                                 </li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
                                 <li><a href="#">LIÊN HỆ</a></li>
+                                <li><a href="#">BLOG</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -147,21 +162,28 @@
                                 $sql = "select * from topngay";
                                 $query = mysqli_query($conn, $sql);
                                 ?>
-                    <div class="header">
-                        <div class="navbar">
-                            <a href="theongay.php">NGÀY</a>
-                            <a href="theothang.php">THÁNG</a>
-                            <a href="theonam.php">NĂM</a>
+                    <div class="product__page__title">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-10 col-sm-6">
+                                    <div class="section-title">
+                                        <h4>TOP ANIME THEO: <a href="theongay.php" style="color:yellow;padding-left:15px;">Ngày</a> 
+                                            <a href="theothang.php" style="color:yellow;padding-left:15px;">Tháng</a> 
+                                            <a href="theonam.php" style="color:yellow;padding-left:15px;">Năm</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-6">
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
                         <?php   
                             while ($data = mysqli_fetch_array($query)) {
                         ?>
                           <div class="leftcolumn">
-                            <div class="card">
+                            <div class="cardbox">
                                 <div class="rowbox">
-                                    <div class="columnbox1">
+                                    <div class="columnbox1" style="color:red;">
                                         <p align="center"><?php echo $data['id']; ?></p>
                                     </div>
                                     <div class="columnbox2" >
@@ -191,29 +213,36 @@
                 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
+                    <?php require_once("Connection.php"); ?>
+                    <?php
+                        $sql = "select * from anime where id='6'";
+                        $query = mysqli_query($conn, $sql);
+                    ?>
                     <div class="product__sidebar">
                         <div class="product__sidebar__view">
                             <div class="section-title">
-                                <h5>Top Views</h5>
+                                <h5>LƯỢT XEM NHIỀU NHẤT</h5>
                             </div>
+                            <?php   
+                                while ($data = mysqli_fetch_array($query)) {
+                            ?>
                             <ul class="filter__controls">
-                                <li class="active" data-filter="*">Day</li>
-                                <li data-filter=".week">Week</li>
-                                <li data-filter=".month">Month</li>
-                                <li data-filter=".years">Years</li>
+                                <li class="active" data-filter="*">Ngày</li>
+                                <li data-filter=".month">Tháng</li>
+                                <li data-filter=".years">Năm</li>
                             </ul>
                             <div class="filter__gallery">
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                data-setbg="img/sidebar/tv-1.jpg">
-                                <div class="ep">18 / ?</div>
-                                <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                <h5><a href="#">Boruto: Naruto next generations</a></h5>
+                                data-setbg="<?php echo $data['anh']; ?>">
+                                <div class="ep"><?php echo $data['sotap']; ?></div>
+                                <div class="view"><i class="fa fa-eye"></i><?php echo $data['luotxem']; ?></div>
+                                <h5><a href="#"><?php echo $data['tenanime']; ?></a></h5>
                             </div>
                             <div class="product__sidebar__view__item set-bg mix month week"
-                            data-setbg="img/sidebar/tv-2.jpg">
+                            data-setbg="<?php echo $data['anh']; ?>">
                             <div class="ep">18 / ?</div>
                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                            <h5><a href="#"><?php echo $data['tenanime']; ?></a></h5>
                         </div>
                         <div class="product__sidebar__view__item set-bg mix week years"
                         data-setbg="img/sidebar/tv-3.jpg">
@@ -234,6 +263,9 @@
                 <h5><a href="#">Fate stay night unlimited blade works</a></h5>
             </div>
         </div>
+                            <?php 
+                            }
+                        ?>
     </div>
     <div class="product__sidebar__comment">
         <div class="section-title">
