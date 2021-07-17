@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anime</title>
+    <title>Anime | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -184,12 +184,12 @@
                                 <li class="active"><a href="./index.php">TRANG CHỦ</a></li>
                                 <li><a href="./categories.php">THỂ LOẠI <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.php">Categories</a></li>
-                                        <li><a href="./anime-details.php">Anime Details</a></li>
-                                        <li><a href="./anime-watching.php">Anime Watching</a></li>
-                                        <li><a href="./blog-details.php">Blog Details</a></li>
-                                        <li><a href="./signup.php">Sign Up</a></li>
-                                        <li><a href="./login.php">Login</a></li>
+                                        <li><a href="tl-haihuoc.php">Hài Hước</a></li>
+                                        <li><a href="tl-hanhdong.php">Hàng Động</a></li>
+                                        <li><a href="tl-shounen.php">Shounen</a></li>
+                                        <li><a href="tl-isekai.php">Isekai</a></li>
+                                        <li><a href="tl-harem.php">Harem</a></li>
+                                        <li><a href="tl-giatuong.php">Giả Tưởng</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="theongay.php">TOP ANIME <span class="arrow_carrot-down"></span></a>
@@ -249,9 +249,7 @@
 </div>
     </section>
  <div class="col-xs-12 col-sm-12 col-md-6">
-       <div class="widget-title">
-           <h3 class="title">Anime Mới Cập Nhật</h3>
-     </div>
+
  </div>
 
     <!-- Product Section Begin -->
@@ -262,8 +260,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-    <br>
-    <br>
+                    <div class="section-title">
+                        <h4>ANIME MỚI</h4>
+                    </div>
                     <?php
                         require_once("Connection.php");
                         $query=mysqli_query($conn,"select * from anime");
@@ -450,10 +449,11 @@
                  <BR>
         <div class="footer__nav">
                     <ul>
-                        <li class="active"><a href="./index.html">TRANG CHỦ</a></li>
-                        <li><a href="./categories.html">THỂ LOẠI</a></li>
-                        <li><a href="./blog.html">TOP ANIME</a></li>
+                        <li class="active"><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="categories.html">THỂ LOẠI</a></li>
+                        <li><a href="theongay.html">TOP ANIME</a></li>
                         <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
                     </ul>
                 </div>
              </div>

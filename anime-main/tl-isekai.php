@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -25,67 +24,6 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<style>
-/* Add a card effect for articles */
-.card {
-
-   color: white;
-   padding: 5px;
-   border-bottom: 1px solid #fff;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cardbox{
-}
-.leftcolumn{
-}
-
-.rowbox{
-    border-bottom: 1px solid #fff;
-}
-.columnbox1 {
-  float: left;
-  width: 5%;
-  padding-top: 30px;
-  height: auto;
-}
-.columnbox2 {
-   padding-top: 10px;
-  float: left;
-  width: 15%;
-  height: auto;
-  text-decoration: none;
-}
-.columnbox3 {
-     padding-top: 20px;
-  float: left;
-  width: 70%;
-  height: auto;
-  text-decoration: none;
-}
-.columnbox4 {
-  float: left;
-  width: 10%;
-  padding-top: 20px;
-  height: auto;
-  text-decoration: none;
-}
-
-.rowbox:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.navbar {
-    text-decoration-line: none;
-}
-
-</style>
 
 <body>
     <!-- Page Preloder -->
@@ -128,7 +66,7 @@
                                 </li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
                                 <li><a href="#">LIÊN HỆ</a></li>
-                                <li><a href="#">BLOG</a></li>
+                                <li><a href="blog.php">BLOG</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -145,72 +83,82 @@
     </header>
     <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <!-- Hero Section End -->
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="index.php"><i class="fa fa-home"></i>TRANG CHỦ</a>
+                        <a href="categories.php">DANH MỤC</a>
+                        <span>ISEKAI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
 
     <!-- Product Section Begin -->
-    <section class="product spad">
+    <section class="product-page spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    
-                    
-                    
-                    
-                    <?php require_once("Connection.php"); ?>
-                                <?php
-                                $sql = "select * from topnam";
-                                $query = mysqli_query($conn, $sql);
-                                ?>
-                    <div class="product__page__title">
+                    <div class="product__page__content">
+                        <div class="product__page__title">
                             <div class="row">
-                                <div class="col-lg-10 col-md-10 col-sm-6">
+                                <div class="col-lg-8 col-md-8 col-sm-6">
                                     <div class="section-title">
-                                        <h4>TOP ANIME THEO: <a href="theongay.php" style="color:yellow;padding-left:15px;">Ngày</a> 
-                                            <a href="theothang.php" style="color:yellow;padding-left:15px;">Tháng</a> 
-                                            <a href="theonam.php" style="color:yellow;padding-left:15px;">Năm</a></h4>
+                                        <h4>ANIME MỚI</h4>
                                     </div>
                                 </div>
-                                <div class="col-lg-2 col-md-2 col-sm-6">
-
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="product__page__filter">
+                                        <p>XẮP XẾP:</p>
+                                        <select>
+                                            <option value="">A-Z</option>
+                                            <option value="">1-10</option>
+                                            <option value="">10-50</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <?php   
-                            while ($data = mysqli_fetch_array($query)) {
-                        ?>
-                          <div class="leftcolumn">
-                            <div class="cardbox">
-                                <div class="rowbox">
-                                    <div class="columnbox1" style="color:red;">
-                                        <p align="center"><?php echo $data['id']; ?></p>
+                        <div class="row">
+                            <?php
+                                require_once("Connection.php");
+                                $query=mysqli_query($conn,"select * from anime where danhmuc='isekai'");
+                                while($row = mysqli_fetch_array($query)){
+                                ?>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="">
+                                        <a href="anime-details.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['anh'];?>" alt="Jane" style="width:100%"></a>
+                                        <div class="ep"><?php echo $row['trangthai'];?></div>
+                                        <div class="comment"><i class="fa fa-comments"></i><?php echo $row['sotap'];?></div>
+                                        <div class="view"><i class="fa fa-eye"></i><?php echo $row['luotxem'];?></div>
                                     </div>
-                                    <div class="columnbox2" >
-                                        <p><a href="#"><img src="<?php echo $data['anh']; ?>" width="100px" height="70px" alt="alt"/></a></p>
-                                        
-                                    </div>
-                                    <div class="columnbox3">
-                                        <a href="anime-details.php?id=<?php echo $row['id']; ?>"><h5><?php echo $data['tenanime']; ?></a></h5>
-                                        
-                                        <p><?php echo $data['mota']; ?></p>
-                                    </div>
-                                    
-                                    <div class="columnbox4">
-                                        <p><?php echo $data['luotxem']; ?> VIEW</p>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li><?php echo $row['danhmuc'];?></li>
+                                        </ul>
+                                        <h5><a href="#"><?php echo $row['tenanime'];?></a></h5>
                                     </div>
                                 </div>
                             </div>
-                          </div>
-                        <?php 
-                            }
-                        ?>
-                
-                
-                
-                
-                
-                
+                            <?php
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    <div class="product__pagination">
+                        <a href="#" class="current-page">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <?php require_once("Connection.php"); ?>
@@ -266,6 +214,7 @@
                             <?php 
                             }
                         ?>
+    </div>
     </div>
     <div class="product__sidebar__comment">
         <div class="section-title">
@@ -409,7 +358,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 

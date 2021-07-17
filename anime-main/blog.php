@@ -35,26 +35,26 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
                     <div class="header__logo">
                         <a href="./index.php">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.php">TRANG CHỦ</a></li>
                                 <li><a href="./categories.php">THỂ LOẠI <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.php">Categories</a></li>
-                                        <li><a href="./anime-details.php">Anime Details</a></li>
-                                        <li><a href="./anime-watching.php">Anime Watching</a></li>
-                                        <li><a href="./blog-details.php">Blog Details</a></li>
-                                        <li><a href="./signup.php">Sign Up</a></li>
-                                        <li><a href="./login.php">Login</a></li>
+                                        <li><a href="tl-haihuoc.php">Hài Hước</a></li>
+                                        <li><a href="tl-hanhdong.php">Hàng Động</a></li>
+                                        <li><a href="tl-shounen.php">Shounen</a></li>
+                                        <li><a href="tl-isekai.php">Isekai</a></li>
+                                        <li><a href="tl-harem.php">Harem</a></li>
+                                        <li><a href="tl-giatuong.php">Giả Tưởng</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="theongay.php">TOP ANIME <span class="arrow_carrot-down"></span></a>
@@ -64,9 +64,9 @@
                                         <li><a href="theonam.php">Theo Năm</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">BLOG</a></li>
                                 <li><a href="#">LỊCH CHIẾU</a></li>
                                 <li><a href="#">LIÊN HỆ</a></li>
+                                <li><a href="blog.php">BLOG</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -90,7 +90,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
                         <h2>Blog</h2>
-                        <p>Welcome to the official Anime blog.</p>
+
                     </div>
                 </div>
             </div>
