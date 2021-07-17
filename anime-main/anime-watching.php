@@ -49,12 +49,12 @@
                                 <li class="active"><a href="./index.php">TRANG CHỦ</a></li>
                                 <li><a href="./categories.php">THỂ LOẠI <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.php">Categories</a></li>
-                                        <li><a href="./anime-details.php">Anime Details</a></li>
-                                        <li><a href="./anime-watching.php">Anime Watching</a></li>
-                                        <li><a href="./blog-details.php">Blog Details</a></li>
-                                        <li><a href="./signup.php">Sign Up</a></li>
-                                        <li><a href="./login.php">Login</a></li>
+                                        <li><a href="tl-haihuoc.php">Hài Hước</a></li>
+                                        <li><a href="tl-hanhdong.php">Hành Động</a></li>
+                                        <li><a href="tl-shounen.php">Shounen</a></li>
+                                        <li><a href="tl-isekai.php">Isekai</a></li>
+                                        <li><a href="tl-harem.php">Harem</a></li>
+                                        <li><a href="tl-giatuong.php">Giả Tưởng</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="theongay.php">TOP ANIME <span class="arrow_carrot-down"></span></a>
@@ -162,35 +162,60 @@
 
     <!-- Footer Section Begin -->
     <footer class="footer">
-        <div class="page-up">
-            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="footer__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="footer__nav">
-                        <ul>
-                            <li class="active"><a href="./index.html">Homepage</a></li>
-                            <li><a href="./categories.html">Categories</a></li>
-                            <li><a href="./blog.html">Our Blog</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                    <h2>Liên hệ Admin</h2>
+                    <br>
+                    <p> Tổng hợp tất cả các bộ anime trên trang được tổng hợp từ Internet và re-up từ các Fansub.</p>
+                    <p><i class="fab fa-facebook-square">FACEBOOK:</i> Tuan Anh </p>
+                    <p><i class="fab fa-facebook-messenger">MESSENGER:</i> Huy Lee </p>
+                    <p><i class="fas fa-envelope">EMAIL:</i> wibuteam@gmail.com  </p>
 
-                  </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Project Anime</h2>
+                <br>
+                <div class="footer-col">
+                <p>Liên hệ công ty thiết kế</p>
+                <p>Giám đốc kiêm trưởng dự án : Tuan Anh</p>
+                <p>Hotline hỗ trợ quảng cáo: 0942 86 11 33</p>
+                <p>Email: wibuhue@gmail.vn</p>
+                <p>Address: Tp huế,tỉnh Thừa thiên Huế</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                  <h2>Thông Tin</h2>
+                  <BR>
+                  <p>Xem tốt nhất t với màn hình độ phân giải 1280x720px trở lên và sử dụng trình duyệt Mozilla Firefox, Chrome & Cốc Cốc.</p>
+                  <p>Bản quyền © 2021 Thiết kế bởi công ty WibuVN.Được quyền bảo lưu và đăng kí bản quyền</p>
+
               </div>
           </div>
-      </footer>
+         <div class="row">
+             <div class="col-lg-3">
+                 
+             </div>
+             <div class="col-lg-6">
+                 <BR>
+        <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="categories.html">THỂ LOẠI</a></li>
+                        <li><a href="theongay.html">TOP ANIME</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                    </ul>
+                </div>
+             </div>
+              <div class="col-lg-3">
+        
+              </div>
+      </div>
+  </footer>
       <!-- Footer Section End -->
 
       <!-- Search model Begin -->
